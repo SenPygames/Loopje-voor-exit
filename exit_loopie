@@ -1,0 +1,44 @@
+import pygame
+import random
+
+
+title = "Pizza"
+width = 640
+height = 400
+pygame.init()
+screen = pygame.display.set_mode((width, height))
+running = True
+clock = pygame.time.Clock()
+pygame.display.set_caption(title)
+
+
+#while running:
+#    for event in pygame.event.get():
+#        if event.type == pygame.QUIT:
+#            running = False
+#        else:
+#            print("pizza")
+#    clock.tick(240)
+#pygame.quit()
+
+
+
+
+Menu = True
+done = True
+# -------- Main Program Loop -----------
+while Menu:
+    # --- Main event loop
+    for event in pygame.event.get():
+        if event.type == pygame.KEYUP:
+            Menu = False
+        
+            while done:
+                for event in pygame.event.get():
+                    if event.type == pygame.QUIT:
+                        done = False
+
+        else:
+            print("pizza")
+    clock.tick(240)
+pygame.quit()
