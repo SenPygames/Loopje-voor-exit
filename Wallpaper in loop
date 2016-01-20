@@ -1,0 +1,71 @@
+import pygame
+import sys
+import os
+from time import*
+from pygame.locals import *
+
+
+
+pygame.init()
+
+
+clock = pygame.time.Clock()
+time = clock
+
+#colours
+white = 255, 255, 255
+green = ()
+red = ()
+black = 0,   0,   0
+darkgray = 64,  64,  64
+gray = 128, 128, 128
+lightgray = 212, 208, 200
+
+#window size
+size = width, height = 1600, 900
+screen = pygame.display.set_mode(size)
+offset = 50
+board_size = 10
+
+
+background = pygame.Surface(screen.get_size())
+
+
+
+
+
+Wallpaper = pygame.image.load("MenuWallpaper.png")
+
+def wall(x,y):
+    screen.blit(Wallpaper,(x,y))
+
+x = (width * 0)
+y = (height * 0)
+
+
+
+
+    
+    #DISPLAYSURF = pygame.display.set_mode((0,0),FULLSCREEN)
+pygame.display.update()
+wall(x,y)
+
+
+
+crashed = False
+
+while not crashed:
+    
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            crashed = True
+        elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+            sys.exit()
+    else:
+        if crashed == False:
+            pygame.display.update()
+            wall(x,y)
+
+        
+clock.tick(240)
+pygame.quit()
