@@ -1,0 +1,68 @@
+import pygame
+import sys
+import os
+from time import*
+from pygame.locals import *
+
+
+
+pygame.init()
+
+
+clock = pygame.time.Clock()
+time = clock
+
+#colours
+white = 255, 255, 255
+green = ()
+red = ()
+black = 0,   0,   0
+darkgray = 64,  64,  64
+gray = 128, 128, 128
+lightgray = 212, 208, 200
+
+#window size
+size = width, height = 1600, 900
+screen = pygame.display.set_mode(size)
+offset = 50
+board_size = 10
+pygame.display.set_caption('boobies')
+screen.fill(white)
+background = pygame.Surface(screen.get_size())
+
+
+
+#render text
+myfont = pygame.font.SysFont("comic sans MS", 25)
+label = myfont.render("Welcome to SURVIVOR", 1, (50, 255, 100))
+screen.blit(label, (320, 100))
+font = pygame.font.Font(None, 36)
+text = font.render("Hello There", 1, (10, 10, 10))
+textpos = text.get_rect()
+textpos.centerx = background.get_rect().centerx
+background.blit(text, textpos)
+
+Wallpaper = pygame.image.load("MenuWallpaper.png")
+
+def wall(x,y):
+    screen.blit(Wallpaper,(x,y))
+
+x = (width * 0)
+y = (height * 0)
+
+
+#hierdoor blijft t beeld staan for some reason
+crashed = False
+
+while not crashed:
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            crashed = True
+
+        print(event)
+
+    #DISPLAYSURF = pygame.display.set_mode((0,0),FULLSCREEN)
+    pygame.display.update()
+    wall(x,y)
+    clock.tick(60)
