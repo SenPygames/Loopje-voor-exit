@@ -1,11 +1,11 @@
-print("Welcome sir")
+print("Welcome sir") 
 import pygame
 import sys
 import os
 from time import*
 from pygame.locals import *
 from Assets import *
-from win32api import GetSystemMetrics
+from win32api import GetSystemMetrics #pywin32 module moet geinstalleerd worden
 
 print ("Width =", GetSystemMetrics(0))
 print ("Height =", GetSystemMetrics(1))
