@@ -1,0 +1,35 @@
+import pygame
+import sys
+import os
+
+#assets
+Wallpaper = pygame.image.load("MenuWallpaper.png")
+QuitButton = pygame.image.load("QuitButton.png")
+StartButton = pygame.image.load("StartButton.png")
+
+
+class Visuals:
+    def __init__(self, ):
+        self.IsEmpty = False
+
+        #wallpaper logic
+        def wall(xw,yw):
+            screen.blit(Wallpaper,(xw,yw))
+
+        xw = (width * 0)
+        yw= (height * 0)
+
+        #QuitButton logic
+        def quit(xq,yq):
+            screen.blit(QuitButton,(xq,yq))
+
+        xq = (width * 0.6)
+        yq = (height * 0.6)
+
+        #StartButton logic
+        def start(xs,ys):
+            screen.blit(StartButton,(xs,ys))
+
+        xs = (width * 0.6)
+        ys = (height * 0.4)
+
