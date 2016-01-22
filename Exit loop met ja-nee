@@ -1,0 +1,161 @@
+import pygame
+import sys
+import os
+from time import*
+
+
+
+
+
+pygame.init()
+
+
+clock = pygame.time.Clock()
+time = clock
+
+#colours
+white = 255, 255, 255
+green = ()
+red = ()
+black = 0,   0,   0
+darkgray = 64,  64,  64
+gray = 128, 128, 128
+lightgray = 212, 208, 200
+
+#board size
+size = width, height = 980, 1260
+screen = pygame.display.set_mode(size)
+offset = 50
+board_size = 10
+pygame.display.set_caption('boobies')
+screen.fill(white)
+background = pygame.Surface(screen.get_size())
+
+
+# class scherm:
+#     def beginscherm(myfont):
+#         pygame.font.SysFont("comic sans MS", 25) = myfont
+#         label = myfont.render("Kees is baas", 1, (50, 255, 100))
+#         screen.blit(label, (320, 100))
+#         font = pygame.font.Font(None, 36)
+#         text = font.render("Hello There", 1, (10, 10, 10))
+#         textpos = text.get_rect()
+#         textpos.centerx = background.get_rect().centerx
+#         background.blit(text, textpos)
+
+#while running:1
+#    for event in pygame.event.get():
+#        if event.type == pygame.QUIT:
+#            running = False
+#        else:
+#            print("pizza")
+#    clock.tick(240)
+#pygame.quit()
+
+
+
+
+Menu = False
+Exit = False
+een = True
+done = True
+# -------- Main Program Loop -----------
+# while Menu:
+#     # --- Main event loop
+#     for event in pygame.event.get():
+#         if event.type == pygame.KEYUP:
+#             Menu = False
+
+#             while done:
+#                 # noinspection PyAssignmentToLoopOrWithParameter
+#                     for event in pygame.event.get():
+#                         if event.type == pygame.QUIT:
+#                             done = True
+
+while not Exit:
+    # --- Main event loop
+    for event in pygame.event.get():
+        if Menu == True and event.type == pygame.KEYUP:
+            Menu = False
+            print("Down")
+        else:
+            if Menu == False and event.type == pygame.KEYUP:
+                if event.key == pygame.K_ESCAPE:
+                    Menu = True
+                    print("Up")
+        if Menu == True and event.type == pygame.QUIT:
+                Exit = True
+
+                # print("kees_chinees")
+                #
+                # While
+
+    else:
+        print("pizza")
+
+
+
+
+
+
+                    # else:
+                    #     if event.type == pygame.KEYDOWN:
+                    #         Menu = True
+#                        myfont = pygame.font.SysFont("comic sans MS", 25)
+#                        label = myfont.render("Samuel is baas", 1, (50, 255, 100))
+#                        screen.blit(label, (320, 100))
+#                        font = pygame.font.Font(None, 36)
+#                        text = font.render("Hello There", 1, (10, 10, 10))
+#                        textpos = text.get_rect()
+#                        textpos.centerx = background.get_rect().centerx
+#                        background.blit(text, textpos)
+
+    #else:
+    
+
+
+
+
+
+
+
+
+#render text
+    # else:
+    #     if Menu:
+    #         for event in pygame.event.get():
+    #             if event.type == pygame.KEYUP:
+    #                 een = False
+    #                 Menu = False
+    #         else:
+    #             if Menu:
+    #                 myfont = pygame.font.SysFont("comic sans MS", 25)
+    #                 label = myfont.render("Welcome to SURVIVOR", 1, (50, 255, 100))
+    #                 screen.blit(label, (320, 100))
+    #                 font = pygame.font.Font(None, 36)
+    #                 text = font.render("Hello There", 1, (10, 10, 10))
+    #                 textpos = text.get_rect()
+    #                 textpos.centerx = background.get_rect().centerx
+    #                 background.blit(text, textpos)
+        
+
+
+
+#hierdoor blijft t beeld staan for some reason
+
+
+#        while not crashed:
+#
+#            for event in pygame.event.get():
+#                if event.type == pygame.QUIT:
+#            crashed = True
+#        
+#        print(event)
+
+        pygame.display.update()
+
+
+        #bg = pygame.image.load("Bureaublad\space.png")
+
+    clock.tick(240)
+pygame.quit()
