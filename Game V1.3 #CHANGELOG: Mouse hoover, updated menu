@@ -25,7 +25,7 @@ pygame.display.set_caption('Boobies')
 if size == (1600, 900):
     Wallpaper = pygame.image.load("MenuWallpaper900p.png")
 if size == (1920, 1080):
-    Wallpaper = pygame.image.load("MenWallpaper1080p.png")
+    Wallpaper = pygame.image.load("MenuWallpaper1080p.png") #ff de menwallpaper dr uit gehaald
 if size == (1366,768):
     Wallpaper = pygame.image.load("MenuWallpaper796p.png")
 if size == (1600, 900):
