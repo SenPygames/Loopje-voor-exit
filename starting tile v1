@@ -65,3 +65,44 @@ PlayerPosList4= Node("Pos31",0,525,Node("Pos32",0,480,Node
 ("Pos30",100,525,Node("Pos31",0,525,
 Empty))))))))))))))))))))))))))))))))))))))))))))
 PlayerList4 = PlayerPosList4
+
+
+
+def Player2Glove(List):
+    x = PlayerList2.Position_X
+    y = PlayerList2.Position_Y
+    gameDisplay.blit(Player2,(x,y))
+
+def Player3Glove(List):
+    x = PlayerList3.Position_X
+    y = PlayerList3.Position_Y
+    gameDisplay.blit(Player3,(x,y))
+def Player4Glove(List):
+    x = PlayerList4.Position_X
+    y = PlayerList4.Position_Y
+    gameDisplay.blit(Player4,(x,y))
+    
+    Player1 = pygame.image.load("BoksHandschoen3.png")
+    Player2 = pygame.image.load("BoksHandschoen.png")
+    Player3 = pygame.image.load("BoksHandschoen4.png")
+    Player4 = pygame.image.load("BoksHandschoen2.png")
+
+            if event.key == pygame.K_2:
+                PlayerList2 = PlayerList2.tail
+            if event.key == pygame.K_3:
+                PlayerList3 = PlayerList3.tail
+            if event.key == pygame.K_4:
+                PlayerList4 = PlayerList4.tail
+                
+                
+    if PlayerList2.Name == "Pos11":
+        PlayerList2 = PlayerPosList2
+    if PlayerList3.Name == "Pos21":
+        PlayerList3 = PlayerPosList3
+    if PlayerList4.Name == "Pos31":
+        PlayerList4 = PlayerPosList4
+        
+        
+    Player2Glove(PlayerList2)
+    Player3Glove(PlayerList3)
+    Player4Glove(PlayerList4)
