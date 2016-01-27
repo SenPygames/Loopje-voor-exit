@@ -230,7 +230,7 @@ def BoardGame(l1,l2,l3,l4,Exit,crash):
                 Exit = True
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
-                    MainMenu(crash,Exit)
+                    MainMenu(crash,Exit,ManualButton, QuitButton,StartButton)
                 if event.key == pygame.K_1:
                     print (event)
                     l1 = l1.tail
