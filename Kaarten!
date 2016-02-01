@@ -1,0 +1,45 @@
+#Kaarten
+Kaart1 = pygame.image.load("kaarten/K1.png")
+Kaart2 = pygame.image.load("kaarten/K2.png")
+Kaart3 = pygame.image.load("kaarten/K3.png")
+Kaart4 = pygame.image.load("kaarten/K4.png")
+Kaart5 = pygame.image.load("kaarten/K5.png")
+Kaart6 = pygame.image.load("kaarten/K6.png")
+Kaart7 = pygame.image.load("kaarten/K7.png")
+Kaart8 = pygame.image.load("kaarten/K8.png")
+Kaart9 = pygame.image.load("kaarten/K9.png")
+Kaart10 = pygame.image.load("kaarten/K10.png")
+Kaart11 = pygame.image.load("kaarten/K11.png")
+Kaart12 = pygame.image.load("kaarten/K12.png")
+Kaart13 = pygame.image.load("kaarten/K13.png")
+Kaart14 = pygame.image.load("kaarten/K14.png")
+Kaart15 = pygame.image.load("kaarten/K15.png")
+Kaart16 = pygame.image.load("kaarten/K16.png")
+Kaart17 = pygame.image.load("kaarten/K17.png")
+Kaart18 = pygame.image.load("kaarten/K18.png")
+xyk = ((width * 0.25),(height * 0.17))
+        
+        
+        
+        
+        
+        K1 = Image(Kaart1,(xyk))
+        K2 = Image(Kaart2,(xyk))
+        K3 = Image(Kaart3,(xyk))
+        K4 = Image(Kaart4,(xyk))
+        K5 = Image(Kaart5,(xyk))
+        K6 = Image(Kaart6,(xyk))
+        K7 = Image(Kaart7,(xyk))
+        K8 = Image(Kaart8,(xyk))
+        K9 = Image(Kaart9,(xyk))
+        K10 = Image(Kaart10,(xyk))
+        K11 = Image(Kaart11,(xyk))
+        K12 = Image(Kaart12,(xyk))
+        K13 = Image(Kaart13,(xyk))
+        K14 = Image(Kaart14,(xyk))
+        K15 = Image(Kaart15,(xyk))
+        K16 = Image(Kaart16,(xyk))
+        K17 = Image(Kaart17,(xyk))
+        K18 = Image(Kaart18,(xyk))
+        
+##Kaarten in png map, gehele map kopieeren
